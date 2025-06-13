@@ -53,7 +53,6 @@ export const getCommunityGoalsRecent = async (req, res) => {
     });
 
     const result = await response.json();
-        console.log(result);
 
     const firstGoal = result.events?.[0]?.eventData?.[0];
 
