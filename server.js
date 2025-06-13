@@ -16,7 +16,7 @@ const __dirname = path.dirname(__filename);
 
 // Express
 app.use(express.json());
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/api/cmdr', cmdrRoutes);
@@ -31,5 +31,4 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   if (process.env.USE_MOCK_DATA === 'true') { console.log('Using mock data')};
   if (process.env.USE_MOCK_DATA === 'false') { console.log('Using real data')};
-  console.log(`Server running at http://localhost:${PORT}`);
 });
