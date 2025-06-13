@@ -29,6 +29,7 @@ app.get('*', (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
   if (process.env.USE_MOCK_DATA === 'true') { console.log('Using mock data')};
   if (process.env.USE_MOCK_DATA === 'false') { console.log('Using real data')};
 });
