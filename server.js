@@ -3,8 +3,8 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import cmdrRoutes from './src/routes/cmdrRoutes.js';
-import goalRoutes from './src/routes/goalRoutes.js';
+import cmdrRoutes from 'src/routes/cmdrRoutes.js';
+import goalRoutes from 'src/routes/goalRoutes.js';
 
 dotenv.config();
 
@@ -24,7 +24,7 @@ app.use('/api/goals', goalRoutes);
 
 // Fallback
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, './public/index.html'));
+  res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 // Start server
