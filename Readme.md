@@ -8,3 +8,6 @@ Or try any of these: https://inara.cz/elite/squadron-roster/85/
 
 
 Community goals fetches the latest community goals and displays some information.
+
+29/06/2025
+Replaced b's with p class="font-bold"
